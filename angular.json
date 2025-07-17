@@ -15,7 +15,6 @@
               "namedChunks": true,
               "optimization": false,
               "sourceMap": true,
-              "buildOptimizer": false,
               "vendorChunk": true,
               "commonChunk": true
             },
