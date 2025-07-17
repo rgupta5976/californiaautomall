@@ -237,7 +237,7 @@ export class CarSearchComponent implements OnInit {
   }
 
   applyFilters(): void {
-    const cleanFilters: CarFilter = {};
+    const cleanFilters: Partial<CarFilter> = {};
 
     // Clean up filters to remove empty values
     Object.keys(this.filters).forEach(key => {
