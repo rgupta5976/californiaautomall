@@ -243,7 +243,7 @@ export class CarSearchComponent implements OnInit {
     Object.keys(this.filters).forEach(key => {
       const value = this.filters[key as keyof CarFilter];
       if (value !== '' && value !== null && value !== undefined) {
-        cleanFilters[key as keyof CarFilter] = value;
+        (cleanFilters as any)[key] = value;
       }
     });
 
